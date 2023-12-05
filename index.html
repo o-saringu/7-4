@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>ベクタ画像、shape()関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "7-4.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+<div class="code">　
+	<p>　　	PShape network;
+	<p>	
+	<p>　　	void setup(){
+	<p>　　	　size(480, 120);
+	<p>　　	　network=loadShape("network.svg");
+	<p>　　	｝
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　background(0);
+	<p>　　	　shape(network, 30, 10);
+	<p>　　	　shape(network, 180, 10, 280, 280);
+	<p>　　	}　
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>SVGファイルを表示する際は次の3ステップをまず行う。
+	<p>①detaフォルダにSVGファイルを追加する。（データをコード画面にドロップ）
+	<p>②SVGファイルを格納するためにPShape変数を作る。
+	<p>④loadShape()関数を用いてデータを変数に読み込む。
+	<p>
+	<p>データを読み込んだらshape()関数を用いて表示する。
+	<p>shape(a, b, c, d, e);
+	<p>a:表示したいファイルを読み込んだ変数。
+	<p>b:x座標
+	<p>c:y座標
+	<p>d:表示時のサイズの幅
+	<p>e:表示時のサイズの高さ
+	<p>dとeは必須項目ではなく、オプションである。指定しない場合は横に伸びていく。
+	<p>
+	<p>※SVGファイルは例として授業時に配られたものを使用する。
+
+</div>
+</body>
+
